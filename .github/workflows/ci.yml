@@ -35,7 +35,7 @@ jobs:
 
   featurebuild:
 
-    if: github.ref == 'refs/heads/feature'
+    if: github.ref != 'refs/heads/master'
     runs-on: ubuntu-latest
 
     steps:
