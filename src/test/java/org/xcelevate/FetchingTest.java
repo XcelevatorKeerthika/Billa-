@@ -28,4 +28,10 @@ class FetchingTest {
         Fetching fetching = new Fetching();
         assertEquals('F', fetching.getGender());
     }
+
+    @Test
+    void testGetWeight() {
+        Fetching fetching = new Fetching();
+        assertEquals(49.8, fetching.getWeight(), 0.001);
+    }
 }
